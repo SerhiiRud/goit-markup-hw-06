@@ -114,7 +114,6 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .current {
   color: var(--accent-color);
@@ -166,7 +165,6 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .header-link:hover,
 .header-tel:hover,
@@ -227,7 +225,6 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -286,24 +283,19 @@ body {
 .about-item {
   position: relative;
 }
-.about-overlay {
+.about-overlay-text {
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-.about-overlay-text {
+  height: 70px;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-background-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /*---------------------TEAM-------------------------*/
@@ -361,7 +353,6 @@ body {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .social-link:hover,
 .social-link:focus {
@@ -393,7 +384,6 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .icon-logo {
   fill: currentColor;
@@ -434,7 +424,6 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .footer-tel,
 .footer-mail {
@@ -444,7 +433,6 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
@@ -491,7 +479,6 @@ body {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
@@ -560,7 +547,6 @@ body {
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -594,7 +580,6 @@ body {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0;
 }
 .portfolio-item-link:hover,
 .portfolio-item-link:focus {
@@ -637,7 +622,7 @@ body {
   transform: translateY(100%);
   transition: transform 250ms var(--transition-timing-function);
 }
-.portfolio-item:hover .portfolio-overlay-text,
-.portfolio-item:focus .portfolio-overlay-text {
+.portfolio-item-link:hover .portfolio-overlay-text,
+.portfolio-item-link:focus .portfolio-overlay-text {
   transform: translateY(0);
 }
